@@ -15,8 +15,8 @@
   <a href="https://github.com/taeyoon0526">
     <img src="https://img.shields.io/badge/GitHub-taeyoon0526-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub taeyoon0526" />
   </a>
-  <a href="https://bot.nexiott.shop">
-    <img src="https://img.shields.io/badge/Bot-bot.nexiott.shop-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="bot.nexiott.shop" />
+  <a href="https://qcut.me">
+    <img src="https://img.shields.io/badge/QCut-qcut.me-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="QCut" />
   </a>
   <a href="https://vend.nexiott.shop">
     <img src="https://img.shields.io/badge/Vend-vend.nexiott.shop-2563EB?style=for-the-badge&logo=cloudflare&logoColor=white" alt="vend.nexiott.shop" />
@@ -40,7 +40,7 @@
 
 | Link | Description |
 | --- | --- |
-| [bot.nexiott.shop](https://bot.nexiott.shop) | Discord bot 경험과 운영 흐름을 웹에서 이어가는 서비스 |
+| [QCUt](https://qcut.me) | 긴 주소를 짧게 만들고 클릭 현황을 확인, 필요한 내용은 QNote로 간단히 함께 공유 |
 | [vend.nexiott.shop](https://vend.nexiott.shop) | 실제로 열어볼 수 있는 웹 서비스 경험을 다듬고 있는 공간 |
 | [github.com/taeyoon0526](https://github.com/taeyoon0526) | 지금까지 만든 실험과 프로젝트를 가장 넓게 볼 수 있는 아카이브 |
 
