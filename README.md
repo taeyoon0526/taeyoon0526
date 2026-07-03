@@ -40,7 +40,7 @@
 
 | Link | Description |
 | --- | --- |
-| [QCUt](https://qcut.me) | 긴 주소를 짧게 만들고 클릭 현황을 확인, 필요한 내용은 QNote로 간단히 함께 공유 |
+| [QCut](https://qcut.me) | 긴 주소를 짧게 만들고 클릭 현황을 확인, 필요한 내용은 QNote로 간단히 함께 공유 |
 | [vend.nexiott.shop](https://vend.nexiott.shop) | 실제로 열어볼 수 있는 웹 서비스 경험을 다듬고 있는 공간 |
 | [github.com/taeyoon0526](https://github.com/taeyoon0526) | 지금까지 만든 실험과 프로젝트를 가장 넓게 볼 수 있는 아카이브 |
 
