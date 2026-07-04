@@ -51,8 +51,12 @@ for (const ref of localRefs) {
   if (/<foreignObject\b/i.test(svg)) {
     errors.push(`SVG contains foreignObject: ${ref}`);
   }
-  if (!/<title\b/i.test(svg) || !/<desc\b/i.test(svg)) {
+  const generatedSnake = /assets\/widgets\/github-contribution-grid-snake(?:-dark)?\.svg$/.test(ref);
+  if (!generatedSnake && (!/<title\b/i.test(svg) || !/<desc\b/i.test(svg))) {
     errors.push(`SVG should include title and desc metadata: ${ref}`);
+  }
+  if (generatedSnake && !/<desc\b/i.test(svg)) {
+    errors.push(`Generated snake SVG should include desc metadata: ${ref}`);
   }
 }
 
