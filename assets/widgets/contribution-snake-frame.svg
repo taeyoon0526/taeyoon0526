@@ -1,0 +1,10 @@
+<svg width="894" height="150" viewBox="0 0 894 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution snake frame</title>
+  <desc id="desc">A neon frame introducing the GitHub contribution snake widget.</desc>
+  <rect width="894" height="150" rx="22" fill="#0D1117"/>
+  <rect x="34" y="26" width="826" height="98" rx="18" fill="#111827" stroke="#2A3344"/>
+  <text x="66" y="68" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">Contribution Snake</text>
+  <text x="66" y="96" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Generated daily from the GitHub contribution grid with light and dark SVG outputs.</text>
+  <path d="M640 76C674 46 704 106 738 76C772 46 802 106 834 76" stroke="#22C55E" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="848" cy="76" r="5" fill="#F97316"/>
+</svg>

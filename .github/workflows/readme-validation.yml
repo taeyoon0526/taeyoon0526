@@ -1,0 +1,62 @@
+name: README Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Install validation tools
+        run: npm install -g markdownlint-cli2 svgo
+
+      - name: Markdown lint
+        run: markdownlint-cli2 README.md "docs/**/*.md"
+
+      - name: Custom README asset check
+        run: node scripts/check-readme-assets.mjs
+
+      - name: README secret and privacy scan
+        run: node scripts/check-readme-secrets.mjs
+
+      - name: Custom README link check
+        run: node scripts/check-readme-links.mjs
+
+      - name: SVG optimize dry run
+        run: |
+          find assets -name '*.svg' -print0 | while IFS= read -r -d '' file; do
+            svgo --input "$file" --output - --quiet > /dev/null
+          done
+
+      - name: Link check
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,204,206,301,302,307,308,403,429
+            --exclude "https://discord.com/users/.*"
+            --exclude "https://t.me/.*"
+            --exclude "https://komarev.com/.*"
+            --exclude "https://github-readme-stats.vercel.app/.*"
+            --exclude "https://streak-stats.demolab.com.*"
+            --exclude "https://github-readme-activity-graph.vercel.app/.*"
+            --exclude "https://github-profile-trophy.vercel.app/.*"
+            README.md
+            docs/readme-plan.md

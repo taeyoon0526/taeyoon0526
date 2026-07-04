@@ -1,0 +1,54 @@
+name: Optional WakaTime Stats
+
+on:
+  schedule:
+    - cron: "42 19 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-wakatime:
+    runs-on: ubuntu-latest
+    env:
+      WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+    steps:
+      - name: Check WakaTime configuration
+        id: wakatime
+        run: |
+          if [ -z "$WAKATIME_API_KEY" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "WAKATIME_API_KEY is not configured; skipping optional README update." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.wakatime.outputs.configured == 'true'
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        if: steps.wakatime.outputs.configured == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Update WakaTime section
+        if: steps.wakatime.outputs.configured == 'true'
+        run: node scripts/update-wakatime-section.mjs
+
+      - name: Commit README WakaTime update
+        if: steps.wakatime.outputs.configured == 'true'
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No WakaTime README changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update wakatime stats [skip ci]"
+          git push

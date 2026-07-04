@@ -1,0 +1,16 @@
+<svg width="894" height="150" viewBox="0 0 894 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub snapshot frame</title>
+  <desc id="desc">A neon frame for the GitHub stats and activity snapshot section.</desc>
+  <rect width="894" height="150" rx="22" fill="#0D1117"/>
+  <rect x="34" y="26" width="826" height="98" rx="18" fill="#111827" stroke="#2A3344"/>
+  <path d="M54 124H840" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 10"/>
+  <text x="66" y="68" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">GitHub Snapshot</text>
+  <text x="66" y="96" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Stats are useful context; the core story is the systems being shipped.</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">
+    <text x="650" y="64" fill="#F97316">stats</text>
+    <text x="700" y="64" fill="#64748B">/</text>
+    <text x="716" y="64" fill="#A855F7">activity</text>
+    <text x="784" y="64" fill="#64748B">/</text>
+    <text x="800" y="64" fill="#38BDF8">snake</text>
+  </g>
+</svg>

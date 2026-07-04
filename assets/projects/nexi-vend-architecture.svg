@@ -1,0 +1,22 @@
+<svg width="430" height="300" viewBox="0 0 430 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Nexi Vend runtime architecture card</title>
+  <desc id="desc">A Nexi Vend system card showing Discord bot, Cloudflare Pages, Supabase, runtime workers, and monitoring.</desc>
+  <rect width="430" height="300" rx="18" fill="#0D1117"/>
+  <rect x="18" y="18" width="394" height="264" rx="16" fill="#111827" stroke="#2A3344"/>
+  <text x="34" y="54" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Nexi Vend</text>
+  <text x="34" y="76" fill="#38BDF8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">Distributed Runtime + Web Control Panel</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    <rect x="64" y="100" width="302" height="30" rx="10" fill="#0B1220" stroke="#5865F2"/>
+    <text x="178" y="120" fill="#F8FAFC">Discord Bot</text>
+    <path d="M215 130V142" stroke="#64748B" stroke-width="2"/>
+    <rect x="64" y="142" width="302" height="30" rx="10" fill="#0B1220" stroke="#F97316"/>
+    <text x="143" y="162" fill="#F8FAFC">Cloudflare Pages Web App</text>
+    <path d="M215 172V184" stroke="#64748B" stroke-width="2"/>
+    <rect x="64" y="184" width="302" height="30" rx="10" fill="#0B1220" stroke="#22C55E"/>
+    <text x="124" y="204" fill="#F8FAFC">Supabase Postgres / Storage / RPC</text>
+    <path d="M215 214V226" stroke="#64748B" stroke-width="2"/>
+    <rect x="64" y="226" width="302" height="30" rx="10" fill="#0B1220" stroke="#A855F7"/>
+    <text x="102" y="246" fill="#F8FAFC">Redis / Workers / Runtime Cluster</text>
+  </g>
+  <text x="84" y="274" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">Prometheus  Sentry  health checks  multi-host services</text>
+</svg>

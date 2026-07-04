@@ -1,0 +1,10 @@
+<svg width="894" height="180" viewBox="0 0 894 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub contribution snake dark placeholder</title>
+  <desc id="desc">A dark-mode placeholder for the generated GitHub contribution snake.</desc>
+  <rect width="894" height="180" rx="22" fill="#0D1117"/>
+  <rect x="34" y="32" width="826" height="116" rx="18" fill="#111827" stroke="#2A3344"/>
+  <path d="M140 90C190 50 230 130 280 90C330 50 370 130 420 90C470 50 510 130 560 90" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="586" cy="90" r="7" fill="#F97316"/>
+  <text x="626" y="84" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Contribution snake pending</text>
+  <text x="626" y="110" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">The workflow will replace this SVG after its first successful run.</text>
+</svg>
